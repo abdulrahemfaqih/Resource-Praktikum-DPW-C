@@ -11,4 +11,5 @@ pada pertemuan pertama kita membahas bla bla bla
 
 ### Code : berada di folder pertemuan1
 ### hasil running
-insert image hasil running disini
+![hasil running pertemuan 1](./assets/html-dasar.png)
+
