@@ -9,6 +9,8 @@ Repositori ini dibuat untuk menyimpan hasil praktikum per pertemuan dalam prakti
 ### Pembahasan
 pada pertemuan pertama kita membahas bla bla bla
 
+by febrianu
+
 ### Code : berada di folder pertemuan1
 ### hasil running
 ![hasil running pertemuan 1](./assets/html-dasar.png)
