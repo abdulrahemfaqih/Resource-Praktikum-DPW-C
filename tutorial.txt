@@ -1,0 +1,19 @@
+untuk cloning file orang lain :
+git clone (link github)
+
+untuk mengetahui nama file directori
+ls
+cd (nama directori)
+
+untuk menyambung folder dengan github :
+git remote -v
+
+untuk menambahkan untuk memasukkan steaging area
+git add *
+
+untuk memberikan komentar apa yang dirubah
+git commit -m "menambahkan text heading"
+
+untuk menambahkan ke github
+git push
+
