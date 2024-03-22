@@ -27,5 +27,5 @@ by febrianu
 
 ### Code : berada di folder pertemuan1
 ### hasil running
-![hasil running pertemuan 1](./assets/html-dasar.png)
+![hasil running pertemuan 1](pertemuan1/assets/hasil%20running.png)
 
