@@ -25,7 +25,9 @@ pada pertemuan pertama kita membahas :
 
 by febrianu
 
-### Code : berada di folder pertemuan1
+### Code : berada di folder pertemuan1 dan file index.html
 ### hasil running
 ![hasil running pertemuan 1](pertemuan1/assets/hasil%20running.png)
+
+## NEXT ?? TABLE!
 
