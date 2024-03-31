@@ -29,5 +29,28 @@ by febrianu
 ### hasil running
 ![hasil running pertemuan 1](pertemuan1/assets/hasil%20running.png)
 
-## NEXT ?? TABLE!
+## PERTEMUAN PERTAMA - HTML DASAR
+
+### Pembahasan
+pada pertemuan pertama kita membahas :
+1. Struktur Tabel
+2. Border dan Caption
+3. Tabel Header
+4. Pengelompokkan Tabel (Thead, Tbody, Tfoot)
+5. Penggabungan Sel (Rowspan, Colspan)
+6. Styling Table Wuthout CSS
+7. Challenge 1,2,3
+
+
+by faqih
+
+### Code : berada di folder pertemuan1 dan file index.html
+### hasil running materi
+![hasil running pertemuan 1](pertemuan2/assets/Materi-HTML-Table.png)
+
+### hasil running challenge
+![hasil running pertemuan 1](pertemuan2/assets/Challenge-HTML-Table.png)
+
+### hasil running layouting web dengan tabel
+![hasil running pertemuan 1](pertemuan2/assets/layouting-web-with-table.png)
 
