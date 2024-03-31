@@ -44,13 +44,13 @@ pada pertemuan pertama kita membahas :
 
 by faqih
 
-### Code : berada di folder pertemuan1 dan file index.html
+### Code : berada di folder pertemuan2
 ### hasil running materi
-![hasil running pertemuan 1](pertemuan2/assets/Materi-HTML-Table.png)
+![hasil running pertemuan 2](pertemuan2/assets/Materi-HTML-Table.png)
 
 ### hasil running challenge
-![hasil running pertemuan 1](pertemuan2/assets/Challenge-HTML-Table.png)
+![hasil running pertemuan 2](pertemuan2/assets/Challenge-HTML-Table.png)
 
 ### hasil running layouting web dengan tabel
-![hasil running pertemuan 1](pertemuan2/assets/layouting-web-with-table.png)
+![hasil running pertemuan 2](pertemuan2/assets/layouting-web-with-table.png)
 
