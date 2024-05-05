@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- contoh penggunaan css external (<link rel="stylesheet" href="namafile.css">) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- contoh penggunaan css internal(<style></style>) -->
+    <style>
+        /* contoh penggunaan id*/
+        #baris1 {
+            text-align: center;
+            color: green;
+        }
+
+        /* contoh penggunaan class */
+        .headline {
+            font-family: Arial;
+            font-size: 50px;
+            color: yellow;
+        }
+
+        /* contoh penggunaan group selector */
+        h1, h2, p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- contoh penggunaan id (#) -->
+    <p id="baris1">Good Morning</p>
+    <p>Good Night</p>
+
+    <hr>
+
+    <!-- contoh penggunaan class (.) -->
+    <i class="headline">Baris 1</i>
+    <br>
+    <b class="headline">Baris 2</b>
+    
+    <hr>
+
+    <!-- contoh penggunaan css inline (style="") -->
+    <h1 style="text-align: center; color: aqua;">Fakultas Teknik</h1>
+    <h2>Teknik Informatika</h2>
+    <p>DPW</p>
+
+    <hr>
+
+    <!-- contoh penerapan the box model (menggunakan css external)-->
+    <div class="satu">
+        <p>satu</p>
+    </div>
+
+    <hr>
+
+    <!-- contoh penggunaan float (menggunakan css external)-->
+    <img src="TNR.png" alt="TNR.png">
+    <p>Lorem ipsum dolor </p>
+     <!-- contoh penggunaan clear (menggunakan css external)-->
+    <p class="clear">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio delectus nesciunt reprehenderit accusantium. Distinctio veniam facere voluptatum, omnis ab odio.</p>
+</body>
+</html>
