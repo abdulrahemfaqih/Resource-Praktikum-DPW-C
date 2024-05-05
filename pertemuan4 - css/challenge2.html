@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            border: 1px solid black;
+            background-color:  #E3E1D9;
+        }
+        .header, .content, .menu, .sidebar, .footer {
+            text-align: center;
+            border: 2px solid black;
+        }
+        .header {
+            height: 100px;
+            background-color: #B4B4B8;
+        }
+        .menu {
+            float: left;
+            height: 100px;
+            width: 200px;
+            background-color: #C7C8CC;
+        }
+        .sidebar {
+            background-color: #C7C8CC;
+            float: right;
+            width: 200px;
+            height: 300px;
+        }
+        .content {
+            background-color: cornsilk;
+            height: 500px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        .sidebox {
+            border: 3px solid black;
+            margin: 10px;
+            background-color: white;
+        }
+        .footer {
+            clear: both;
+            height: 50px;
+            background-color: #C7C8CC;
+        }
+    </style>
+    <title>Layout</title>
+</head>
+<body>
+    <div class="header">
+       <h1>The Header</h1>
+       <p>height: 100px;</p>
+    </div>
+
+    <div class="menu">
+        Menu
+        <p>height: 100px; width: 200px;</p>
+    </div>
+
+    <div class="sidebar">
+        Sidebar
+        <p>width: 200px; height: 300px;</p>
+        <div class="sidebox">
+            Box 1
+            <p>Ini adalah konten dari box pertama</p>
+        </div>
+        <div class="sidebox">
+            Box 2
+            <p>Ini adalah konten dari box kedua</p>
+        </div>
+    </div>
+
+    <div class="content">
+        Content
+        <p>height: 500px; margin-left: 200px; margin-right: 200px;</p>
+    </div>
+
+    <div class="footer">
+        Footer
+        <p>height: 50px;</p>
+    </div>
+</body>
+</html>

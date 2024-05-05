@@ -1,0 +1,24 @@
+/* contoh penerapan the box model */
+.satu {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(194, 196, 106);
+    border: 15px solid rgb(128, 106, 228);
+    margin: 20px 10px 30px 40px;
+    padding: 30px 50px;
+}
+
+.satu p {
+    color: rgb(255, 253, 127);
+}
+
+/* contoh penggunaan float */
+img {
+    width: 100px;
+    float: right;
+}
+
+/* contoh penggunaan clear */
+.clear {
+    clear: right;
+}
