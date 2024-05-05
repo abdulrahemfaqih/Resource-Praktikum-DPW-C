@@ -1,19 +1,7 @@
-untuk cloning file orang lain :
-git clone (link github)
+untuk cloning repo ini bisa dengan cara
+git clone https://github.com/abdulrahemfaqih/Resource-Praktikum-DPW-C.git
 
-untuk mengetahui nama file directori
-ls
-cd (nama directori)
+jika belum mempunyai git dapat mengunduhnya berupa zip di tombol code berwarna hijau lalu pilih download zip
 
-untuk menyambung folder dengan github :
-git remote -v
 
-untuk menambahkan untuk memasukkan steaging area
-git add *
-
-untuk memberikan komentar apa yang dirubah
-git commit -m "menambahkan text heading"
-
-untuk menambahkan ke github
-git push
 
