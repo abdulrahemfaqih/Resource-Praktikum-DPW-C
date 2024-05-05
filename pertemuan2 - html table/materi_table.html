@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi HTML Table</title>
+</head>
+<body>
+    <!-- === CONTOH TABEL SEDERHANA === -->
+    <table border="1">
+        <caption>
+            <b>Data Tabel</b>
+        </caption>
+        <tr>
+            <th></th>
+            <th>Kolom 2</th>
+            <th>Kolom 3</th>
+            <th>Kolom 4</th>
+        </tr>
+        <tr>
+            <th>Baris 2</th>
+            <td>Satu</td>
+            <td>Dua</td>
+            <td>Tiga</td>
+        </tr>
+        <tr>
+            <th>Baris 3</th>
+            <td>Satu</td>
+            <td>Dua</td>
+            <td>Tiga</td>
+        </tr>
+        <tr>
+            <th>Baris 4</th>
+            <td>Satu</td>
+            <td>Dua</td>
+            <td>Tiga</td>
+        </tr>
+        <tr>
+            <th>Baris 5</th>
+            <td>Satu</td>
+            <td>Dua</td>
+            <td>Tiga</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <hr>
+    
+    <br><br>
+
+    <!-- === VERTICAL TABLE HEADERS === -->    
+    <table border="1">
+        <caption>
+          <b>VERTICAL TABLE HEADERS</b>
+        </caption>
+        <tr>
+          <th>Nama</th>
+          <td>Lorem Ipsum</td>
+        </tr>
+        <tr>
+          <th>Program Studi</th>
+          <td>Teknik Informatika</td>
+        </tr>
+      </table>
+
+      <br><br>
+      
+    <!-- === HORIZONTAL TABLE HEADERS === -->
+    <table border="1">
+    <caption>
+        <b>HORIZONTAL TABLE HEADERS</b>
+    </caption>
+    <tr>
+        <th>Nama</th>
+        <th>Program Studi</th>
+    </tr>
+    <tr>
+        <td>Lorem Ipsum</td>
+        <td>Teknik Informatika</td>
+    </tr>
+    </table>
+
+    <br><br>
+
+    <hr>
+    
+    <br><br>
+
+    <!-- === PENGELOMPOKAN TABEL === -->
+    <table border="1">
+        <caption><b>Nilai Ujian</b></caption>
+        <thead>
+            <tr>
+                <th>NIM</th>
+                <th>Nilai</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>22-109</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>22-200</td>
+                <td>90</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Rata-rata</td>
+                <td>95</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br>
+
+    <hr>
+    
+    <br><br>
+
+    <!-- === COLUMN SPAN === -->
+    <table border="1">
+        <caption>
+            <b>STATISTIK KELAS</b>
+        </caption>
+        <tr>
+            <th colspan="2">Jumlah Mahasiswa</th>
+        </tr>
+        <tr>
+            <th>Laki-laki</th>
+            <th>Perempuan</th>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>21</td>
+        </tr>
+    </table>
+
+    <br><br>
+      
+    <!-- === COLUMN SPAN === -->
+    <table border="1">
+    <caption>
+        <b>STATISTIK KELAS</b>
+    </caption>
+    <tr>
+        <th rowspan="2">Kelas</th>
+        <th colspan="2">Jumlah Mahasiswa</th>
+    </tr>
+    <tr>
+        <th>Laki-laki</th>
+        <th>Perempuan</th>
+    </tr>
+    <tr>
+        <td>A</td>
+        <td>20</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>B</td>
+        <td>23</td>
+        <td>19</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>21</td>
+        <td>21</td>
+    </tr>
+    </table>
+
+    <br><br>
+
+    <hr>
+    
+    <br><br>
+
+    <!-- === STYLING TABLE WITHOUT CSS === -->
+    <table border="1" cellpadding="50" cellspacing="10">
+        <tr>
+            <td rowspan="4" bgcolor="yellow" width="50"></td>
+            <td></td>
+            <td rowspan="2" bgcolor="blue" width="50"></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2" bgcolor="blue"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td bgcolor="green"></td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <hr>
+      
+    <br><br>
+
+    <!-- === FONT === --> 
+    <table border="1">
+        <caption>
+            <font face="consolas" color="red" size="6"> DAFTAR BUKU </font>
+        </caption>
+        <thead bgcolor="green">
+            <tr>
+            <th><font color="white">Judul</font></th>
+            <th><font color="white">Penulis</font></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Laskar Pelangi</td>
+            <td>Andrea Hirata</td>
+            </tr>
+            <tr>
+            <td>Pulang</td>
+            <td>Leila S. Chudori</td>
+            </tr>
+        </tbody>
+        <tfoot bgcolor="yellow">
+            <tr>
+            <td colspan="2" align="center">
+                <font face="consolas">Sumber: <a href="https://www.gramedia.com">Toko Buku</a></font>
+            </td>
+            </tr>
+        </tfoot>
+    </table>   
+</body>
+</html>

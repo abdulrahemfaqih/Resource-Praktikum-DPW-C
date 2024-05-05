@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Barang</title>
+<style>
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .add-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Order Barang</h2>
+  <table id="order-table">
+    <thead>
+      <tr>
+        <th>Nama Barang</th>
+        <th>Harga</th>
+        <th>Jumlah</th>
+        <th>Subtotal</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" class="nama-barang" /></td>
+        <td><input type="number" class="harga-barang" min="0" step="0.01" /></td>
+        <td><input type="number" class="jumlah-barang" min="0" /></td>
+        <td><span class="subtotal">0</span></td>
+        <td><button class="delete-btn">Hapus</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <button id="add-btn" class="add-btn">Tambah Barang</button>
+  <div id="total-price">Total Harga: 0</div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const addButton = document.getElementById('add-btn');
+    const orderTable = document.getElementById('order-table');
+    const totalPriceOutput = document.getElementById('total-price');
+
+    // Function to update subtotal and total price
+    function updateTotals() {
+      let total = 0;
+      const subtotals = document.querySelectorAll('.subtotal');
+      subtotals.forEach(subtotal => {
+        total += parseFloat(subtotal.textContent);
+      });
+      totalPriceOutput.textContent = 'Total Harga: ' + total.toFixed(2);
+    }
+
+    // Function to delete row
+    function deleteRow(event) {
+      const row = event.target.closest('tr');
+      row.remove();
+      updateTotals();
+    }
+
+    // Function to calculate subtotal
+    function calculateSubtotal(event) {
+      const row = event.target.closest('tr');
+      const harga = parseFloat(row.querySelector('.harga-barang').value);
+      const jumlah = parseInt(row.querySelector('.jumlah-barang').value);
+      const subtotal = harga * jumlah || 0;
+      row.querySelector('.subtotal').textContent = subtotal.toFixed(2);
+      updateTotals();
+    }
+
+    // Add event listener to delete buttons
+    const deleteButtons = document.querySelectorAll('.delete-btn');
+    deleteButtons.forEach(button => {
+      button.addEventListener('click', deleteRow);
+    });
+
+    // Add event listener to input fields for calculating subtotal
+    orderTable.addEventListener('input', function(event) {
+      if (event.target.classList.contains('harga-barang') || event.target.classList.contains('jumlah-barang')) {
+        calculateSubtotal(event);
+      }
+    });
+
+    // Add event listener for adding new row
+    addButton.addEventListener('click', function() {
+      const newRow = `
+        <tr>
+          <td><input type="text" class="nama-barang" /></td>
+          <td><input type="number" class="harga-barang" min="0" step="0.01" /></td>
+          <td><input type="number" class="jumlah-barang" min="0" /></td>
+          <td><span class="subtotal">0</span></td>
+          <td><button class="delete-btn">Hapus</button></td>
+        </tr>
+      `;
+      orderTable.querySelector('tbody').insertAdjacentHTML('beforeend', newRow);
+      const newDeleteButton = orderTable.querySelector('tbody tr:last-child .delete-btn');
+      newDeleteButton.addEventListener('click', deleteRow);
+    });
+  });
+</script>
+
+</body>
+</html>
