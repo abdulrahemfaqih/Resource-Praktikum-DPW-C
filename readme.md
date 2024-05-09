@@ -27,8 +27,7 @@ by febrianu
 
 
 ### Code : berada di folder pertemuan2-html-dasar dan file index.html
-### hasil running
-![hasil running pertemuan 1](pertemuan2-html-dasar/assets/hasil%20running.png)
+
 
 ## PERTEMUAN KETIGA- HTML TABLE
 
@@ -46,14 +45,7 @@ pada pertemuan ketiga kita membahas :
 by faqih
 
 ### Code : berada di folder pertemuan3-html-table
-### hasil running materi
-![hasil running pertemuan 2](pertemuan3-html-table/assets/Materi-HTML-Table.png)
 
-### hasil running challenge
-![hasil running pertemuan 2](pertemuan3-html-table/assets/Challenge-HTML-Table.png)
-
-### hasil running layouting web dengan tabel
-   ![hasil running pertemuan 2](pertemuan3-html-table/assets/layouting-web-with-table.png)
 
 ## PERTEMUAN KELIMA- CSS dasar dan Layouting
 
@@ -68,11 +60,23 @@ pada pertemuan kelima kita membahas :
 by febi
 
 ### Code : berada di folder pertemuan5-css
-### hasil running materi
-![hasil running pertemuan 2](pertemuan5-css/assets/hasil_running1.png)
 
-### hasil running ch1
-![hasil running pertemuan 2](pertemuan5-css/assets/hasil_running2.png)
 
-### hasil running lch2
-![hasil running pertemuan 2](pertemuan5-css/assets/hasil_running3.png)
+
+
+## PERTEMUAN KEENAM - Javascript dasar dan DOM
+### Pembahasan
+pada pertemuan kenam kita membahas :
+1. Syntax Dasar Js
+2. Variabel dan Tipe data
+3. Operator
+4. Penkondisian
+5. Perulangan
+6. Fungsi
+7. Dom Tree
+8. DOM Seleksi
+9. Menanipulasi Dom
+10. Event Handling
+11. Challenge
+
+### Code : berada di folder pertemuan9-javascript
