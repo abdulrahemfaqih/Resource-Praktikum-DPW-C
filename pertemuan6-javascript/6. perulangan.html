@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Perulangan</title>
+   </head>
+   <body>
+      <script>
+         // for
+         document.writeln("<h1>Perulangan for</h1>");
+         for (let i = 0; i <= 10; i++) {
+            if (i % 2 == 0) document.writeln(`<h6>Perulangan ke-${i}</h6>`);
+            else document.writeln(`<h3>Perulangan ke-${i}</h3>`);
+         }
+
+         // while
+         document.writeln("<h1>Perulangan While</h1>");
+         let angka = 0;
+         while (angka < 10 + 1) {
+            document.writeln(`<h3>Perulangan ke-${angka}</h3>`);
+            angka++;
+         }
+         document.writeln(`<br>`);
+
+
+         // do while
+         let number = 12;
+         do {
+            document.writeln(`<h3>Perulangan ke-${number}</h3>`);
+            number++;
+         } while (angka < 10);
+      </script>
+   </body>
+</html>

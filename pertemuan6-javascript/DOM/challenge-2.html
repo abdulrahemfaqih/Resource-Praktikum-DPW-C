@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Simple Todolist</title>
+      <style>
+         .done {
+            text-decoration: line-through;
+         }
+      </style>
+   </head>
+   <body>
+      <h2>Simple TodoList</h2>
+      <form action="#" method="post" id="todoForm">
+         <input type="text" name="todo" id="todoInput" />
+         <button type="submit">add</button>
+         <br /><br />
+         <!-- <ul id="todoList">
+            <li>ashdah</li>
+            <li>as</li>
+         </ul> -->
+      </form>
+      <script>
+         const todoForm = document.getElementById("todoForm");
+         const todoList = document.getElementById("todoList");
+
+         todoForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const inputTodo = document.getElementById("todoInput");
+            const inputTodoValue = inputTodo.value.trim();
+
+            if (inputTodoValue == "") {
+               alert("inputkan todo yang benar!");
+               return;
+            }
+            // bisa pakai cara inner gini
+            const listItemTodo = "<li>" + inputTodoValue + "</li>";
+            todoList.innerHTML += listItemTodo;
+            
+            // bisa pakai cara append seperti ini
+            // const listItemTodo = document.createElement("li");
+            // listItemTodo.textContent = inputTodoValue;
+            // todoList.appendChild(listItemTodo);
+
+            // inputTodo.value = "";
+         });
+
+         // ini digunakan untuk menandai listnya sebagai selesai
+         todoList.addEventListener("click", (event) => {
+            if (event.target.tagName === "li") {
+               event.target.classList.toggle("done");
+            }
+         });
+      </script>
+   </body>
+</html>

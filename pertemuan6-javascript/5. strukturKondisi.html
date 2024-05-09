@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Penkondisian</title>
+   </head>
+   <body>
+      <script>
+         // if, else if, else
+         const nilaiUas = 7;
+         if (nilaiUas >= 80) document.writeln(`<h1>A</h1>`);
+         else if ((nilaiUas < 80) & (nilaiUas >= 70)) {
+            document.writeln(`<h1>B</h1>`);
+         } else {
+            document.writeln(`<h1>C</h1>`);
+         }
+
+         // switch case
+         const predikat = "A";
+         switch (predikat) {
+            case "A":
+               document.writeln(`<h1>Bagus</h1>`);
+               break
+            case "B":
+               document.writeln(`<h1>Biasa Aja</h1>`);
+               break
+            default:
+               document.writeln(`<h1>Jelek</h1>`);
+         }
+      </script>
+   </body>
+</html>

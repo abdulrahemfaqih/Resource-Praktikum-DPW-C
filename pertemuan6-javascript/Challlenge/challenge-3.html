@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 3</title>
+    <style>
+      body {
+        padding: 10px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      table {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" id="myForm">
+      <input type="number" id="baris" />
+      <input type="number" id="kolom" />
+      <input type="text" id="warna" />
+      <button type="submit">Kirim</button>
+    </form>
+    <div style="overflow-x: scroll;" id="content"></div>
+
+    <script>
+      const myForm = document.getElementById("myForm");
+      const content = document.getElementById("content");
+
+      const baris = document.getElementById("baris");
+      const kolom = document.getElementById("kolom");
+      const warna = document.getElementById("warna");
+
+      myForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let result =
+          "<table border='1' cellpadding='10' cellspacing=10 style='margin-top:20px'>";
+
+        for (let i = 1; i <= baris.value; i++) {
+          result += "<tr>";
+          for (let j = 1; j <= kolom.value; j++) {
+            if (i % 2 == 1)
+              result += `<td style="background-color:${warna.value}">${i}.${j}</td>`;
+            else result += `<td>${i}.${j}</td>`;
+          }
+          result += "</tr>";
+        }
+        result += "</table>";
+
+        content.innerHTML = result;
+      });
+    </script>
+  </body>
+</html>

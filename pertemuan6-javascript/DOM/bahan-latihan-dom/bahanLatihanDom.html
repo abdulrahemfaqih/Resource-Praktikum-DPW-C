@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Dom Selection</title>
+      <style>
+         * {
+            border: 2px solid #dedede;
+            padding: 15px;
+            margin: 15px;
+         }
+         html {
+            margin: 0;
+            padding: 0;
+         }
+         body {
+            max-width: 600px;
+            margin: 30px auto;
+            font-family: sans-serif;
+            color: #333;
+         }
+
+         .warna {
+            color: red;
+         }
+      </style>
+   </head>
+   <body>
+      <h1 id="judul">Latihan DOM</h1>
+      <h1 id="judu2l">Latihan DOM2</h1>
+      <div id="container">
+         <section id="a">
+            <p class="p1" onclick="ubahWarna()">paragraf 1</p>
+            <a
+               href="https://github.com/abdulrahemfaqih/Resource-Praktikum-DPW-C"
+               >Sulikan</a
+            >
+            <p class="p2">paragraf 2</p>
+            <p class="p3">paragraf 3</p>
+         </section>
+         <section id="b">
+            <p>paragraf 4</p>
+            <ul>
+               <li>item 1</li>
+               <li>item 2</li>
+               <li>item 3</li>
+            </ul>
+         </section>
+         <section id="ouput"></section>
+         <form action="" id="formInput">
+            <textarea name="input" id="input" cols="50" rows="2"></textarea>
+            <button type="submit">Kirim</button>
+         </form>
+      </div>
+      <script>
+         const judul = document.getElementById("judul");
+         const judul1 = document.getElementsByTagName("h1")[1];
+         const paragraf = document.getElementsByClassName("p1")[1];
+
+         const li1 = document.querySelector("#container #b li:nth-child(1)");
+
+         judul.style.backgroundColor = "blue"
+         judul1.innerHTML = "test ganti"
+
+
+         const sectionA = document.querySelector('#a')
+
+         const paragrafBaru = document.createElement("p")
+         paragrafBaru.textContent = "paragraf baru"
+         sectionA.appendChild(paragrafBaru)
+
+         const paragrafSatu = document.querySelector(".p1")
+
+         function ubahWarna() {
+            paragrafSatu.classList.toggle("warna")
+         }
+
+      </script>
+   </body>
+</html>

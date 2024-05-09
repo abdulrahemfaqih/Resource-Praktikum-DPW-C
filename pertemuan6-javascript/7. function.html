@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      // membuat function cek nilai
+
+      const nilai = 80;
+      // deklaratif function
+      function checkNilai(nilai) {
+         if (nilai >= 90) {
+            document.writeln("A")
+         } else if (nilai < 89 && nilai >= 70) {
+            document.writeln("B")
+         } else {
+            document.writeln("C")
+         }
+      }
+      checkNilai(nilai)
+
+
+      // function expression
+
+      check = function(nilai) {
+         if (nilai >= 90) {
+            document.writeln("A")
+         } else if (nilai < 89 && nilai >= 70) {
+            document.writeln("B")
+         } else {
+            document.writeln("C")
+         }
+      }
+
+      let hasil = check(nilai)
+   </script>
+</body>
+</html>
