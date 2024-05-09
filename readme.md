@@ -65,7 +65,7 @@ pada pertemuan kelima kita membahas :
 4. CSS Box Model
 5. Layouting Halaman
 
-by faqih
+by febi
 
 ### Code : berada di folder pertemuan5-css
 ### hasil running materi
